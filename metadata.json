@@ -1,0 +1,6 @@
+{
+  "name": "Crece en Calma - Guía Fuera de la Espiral de Vergüenza",
+  "description": "Página optimizada de alta conversión para la guía digital Crece en Calma: guiones prácticos para transformar la culpa y vergüenza infantil en resiliencia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

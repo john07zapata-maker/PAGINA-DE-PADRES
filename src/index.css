@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Fraunces', Georgia, serif;
+    --font-script: 'Caveat', cursive;
+    --font-accent: 'Quicksand', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+/* Custom glow & subtle animation */
+@keyframes subtle-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 10px 25px -5px rgba(232, 93, 54, 0.4);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 16px 32px -4px rgba(232, 93, 54, 0.55);
+  }
+}
+
+.animate-cta {
+  animation: subtle-pulse 3s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.animate-cta:hover {
+  animation-play-state: paused;
+}
